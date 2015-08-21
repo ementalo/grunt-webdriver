@@ -36,7 +36,8 @@ module.exports = function(grunt) {
                 quiet: false,
                 nospawn: false,
                 seleniumOptions: {},
-                seleniumInstallOptions: {}
+                seleniumInstallOptions: {},
+                baseUrl: null
             }),
             sessionID = null,
             capabilities = deepmerge(options, this.data.options || {}),
